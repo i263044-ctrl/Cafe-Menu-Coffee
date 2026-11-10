@@ -1,0 +1,35 @@
+/* Colours: cream #f6efe6, teal #2f5d5a, brown #5a3a26 | Font: Georgia */
+body {
+  background-color: #f6efe6;
+  color: #5a3a26;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #2f5d5a;
+}
+
+img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+table {
+  margin: 0 auto 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #5a3a26;
+  padding: 8px 20px;
+}
+
+button {
+  background-color: #2f5d5a;
+  color: white;
+  font-size: 18px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+}
