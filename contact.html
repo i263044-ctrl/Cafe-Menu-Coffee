@@ -1,0 +1,81 @@
+<!--
+  Name: Nafay Ibrahim
+  Roll Number: I26-3044
+  Section: BSE F26
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Wanderer's Cup - Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <h1>The Wanderer's Cup</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="contact-container">
+    <h2>Get in Touch</h2>
+    <p class="contact-intro">Whether you want to reserve a cozy corner or just say hello, we'd love to hear from you!</p>
+
+    <div class="contact-wrapper">
+      <!-- Café Information -->
+      <section class="contact-info">
+        <h3>Visit Us</h3>
+        <p><strong>Address:</strong> Street 44, F-7/4, Islamabad, Pakistan</p>
+        <p><strong>Phone:</strong> +92 51 1234567</p>
+        
+        <h3>Opening Hours</h3>
+        <p><strong>Mon - Fri:</strong> 8:00 AM – 10:00 PM</p>
+        <p><strong>Sat - Sun:</strong> 9:00 AM – 11:00 PM</p>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="contact-form-section">
+        <h3>Send Us a Message</h3>
+        <form onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required placeholder="Your full name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="Your email address">
+          </div>
+
+          <div class="form-group message-group">
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required placeholder="Your message or feedback..."></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 The Wanderer's Cup. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function handleFormSubmit(event) {
+      event.preventDefault(); // Prevents page reload
+      const name = document.getElementById('name').value;
+      window.alert("Thank you, " + name + "! Your message has been sent successfully.");
+      event.target.reset(); // Resets the form fields
+    }
+  </script>
+</body>
+</html>
