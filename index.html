@@ -4,44 +4,69 @@
   Section: BSE F26
 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Café Menu</title>
+  <meta charset="UTF-8">
+  <title>The Wanderer's Cup - Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>The Wanderer's Cup</h1>
-  <img src="images/coffee.png" alt="Latte on a marble table">
 
-  <h2>Menu</h2>
-  <table>
-    <tr>
-      <th>Item</th>
-      <th>Price (PKR)</th>
-    </tr>
-    <tr>
-      <td>Espresso</td>
-      <td>250</td>
-    </tr>
-    <tr>
-      <td>Cappuccino</td>
-      <td>400</td>
-    </tr>
-    <tr>
-      <td>Latte</td>
-      <td>450</td>
-    </tr>
-    <tr>
-      <td>Cold Brew</td>
-      <td>500</td>
-    </tr>
-    <tr>
-      <td>Butter Croissant</td>
-      <td>350</td>
-    </tr>
-  </table>
+  <!-- Header & Navigation -->
+  <header>
+    <h1>The Wanderer's Cup</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <button onclick="orderNow()">Order</button>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to Your Next Destination</h2>
+    <p>A cozy spot for travelers, thinkers, and coffee lovers.</p>
+    <img src="images/coffee.png" alt="Latte on a marble table">
+  </section>
+
+  <!-- Featured Content -->
+  <main>
+    <h2>Featured Menu</h2>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Price (PKR)</th>
+      </tr>
+      <tr>
+        <td>Espresso</td>
+        <td>250</td>
+      </tr>
+      <tr>
+        <td>Cappuccino</td>
+        <td>400</td>
+      </tr>
+      <tr>
+        <td>Latte</td>
+        <td>450</td>
+      </tr>
+      <tr>
+        <td>Cold Brew</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>Butter Croissant</td>
+        <td>350</td>
+      </tr>
+    </table>
+
+    <button onclick="orderNow()">Order Now</button>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 The Wanderer's Cup. All rights reserved.</p>
+  </footer>
 
   <script>
     function orderNow() {
