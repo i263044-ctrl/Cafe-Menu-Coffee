@@ -175,7 +175,7 @@ button:hover {
 /* Contact Page Styles */
 .contact-container {
   padding: 20px;
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -186,12 +186,15 @@ button:hover {
 
 .contact-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
   gap: 30px;
-  text-align: center;
+  text-align: left;
 }
 
 .contact-info, .contact-form-section {
+  flex: 1;
+  min-width: 280px;
   background-color: #ffffff;
   padding: 25px;
   border: 1px solid #5a3a26;
@@ -204,7 +207,6 @@ button:hover {
   border-bottom: 2px solid #2f5d5a;
   padding-bottom: 5px;
   margin-top: 0;
-  display: inline-block;
 }
 
 .contact-info p {
@@ -212,38 +214,19 @@ button:hover {
   line-height: 1.6;
 }
 
-/* Contact Form Alignment Fix */
-.contact-form-section form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 450px;
-  margin: 0 auto;
-}
-
 .form-group {
   margin-bottom: 15px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-/* Target Message row specifically to align label to top */
-.form-group.message-group {
-  align-items: flex-start;
 }
 
 .form-group label {
+  display: block;
   font-weight: bold;
   color: #5a3a26;
-  width: 90px;
-  text-align: right;
-  padding-right: 12px;
-  box-sizing: border-box;
+  margin-bottom: 5px;
 }
 
 .form-group input, .form-group textarea {
-  flex: 1;
+  width: 100%;
   padding: 10px;
   border: 1px solid #5a3a26;
   border-radius: 5px;
@@ -258,6 +241,7 @@ button:hover {
 }
 
 .contact-form-section button {
+  width: 100%;
   margin-top: 10px;
 }
 
@@ -266,80 +250,5 @@ footer {
   margin-top: 40px;
   padding: 15px 0;
   border-top: 1px solid #5a3a26;
-  font-size: 14px;
-}
-
-/* Specials Page Styles */
-.specials-container {
-  padding: 20px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.specials-intro {
-  font-style: italic;
-  margin-bottom: 30px;
-}
-
-.specials-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-}
-
-.specials-card {
-  position: relative;
-  background-color: #ffffff;
-  border: 1px solid #5a3a26;
-  border-radius: 10px;
-  width: 260px;
-  padding: 25px 20px 20px 20px;
-  box-shadow: 0 4px 6px rgba(90, 58, 38, 0.1);
-  text-align: center;
-  transition: transform 0.2s ease;
-}
-
-.specials-card:hover {
-  transform: translateY(-5px);
-}
-
-.specials-card .badge {
-  position: absolute;
-  top: -12px;
-  right: 15px;
-  background-color: #2f5d5a;
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: bold;
-  padding: 4px 12px;
-  border-radius: 12px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-}
-
-.specials-card h3 {
-  color: #2f5d5a;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
-.specials-card .desc {
-  color: #5a3a26;
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 15px;
-}
-
-.specials-card .price {
-  font-size: 16px;
-  color: #5a3a26;
-  margin: 0;
-}
-
-.specials-card .old-price {
-  text-decoration: line-through;
-  color: #888888;
-  margin-right: 8px;
   font-size: 14px;
 }
